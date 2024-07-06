@@ -1,0 +1,27 @@
+<%include ./Partials/header.ejs %>
+<div class="w-full h-screen bg-zinc-300 flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1604079628040-94301bb21b91?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+    <div class="w-[28vw] h-[80vh] bg-zinc-100 rounded-[28px] px-10 py-5 text-center">
+      <img class=" w-[50px] h-[50px] bg-cover inline-block rounded-3xl" src="https://i.pinimg.com/originals/86/0c/87/860c87633f4de3aae800d9c948cbebdd.png" alt="">
+      <h1 class="text-2xl font-semibold text-center px-3 py-5">Create New Account
+      </h1>
+      <form action="/register" method="post">
+        <!-- <p class="flex-none">Username</p> -->
+        <input class="block w-full px-3 py-2 rounded-md mt-2 mb-2 bg-zinc-200" type="text" name="username" id="username" placeholder="Username">
+
+        <input class="block w-full px-3 py-2 rounded-md mt-2 mb-2 bg-zinc-200" type="text" name="name" id="name" placeholder="Enter Your Name">
+        <!-- <p class="flex-none">Email</p> -->
+        <input class="block w-full px-3 py-2 rounded-md mt-2 mb-4 bg-zinc-200" type="email" name="email" id="email" placeholder="Email"> 
+        <!-- <p class="flex-none">Contact</p> -->
+        <input class="block w-full px-3 py-2 rounded-md mt-2 mb-4 bg-zinc-200" type="number" name="contact" id="contact" placeholder="Contact">
+        <!-- <p class="flex-none">Password</p> -->
+        <input class="block w-full px-3 py-2 rounded-md mt-2 mb-4 bg-zinc-200" type="password" name="password" id="password" placeholder="Password">
+        <input class="block w-full px-3 py-2 rounded-md mt-2 bg-red-600 text-white" type="submit" name="button" id="register" value="Create New Account">
+        <a class="mt-2 inline-block text-zinc-700 font-semibold" href="/"> Login Existing Account?</a>
+      </form>
+  
+      <p class="font-semibold text-xs  text-center text-zinc-700 mt-5  w-2/2 ">By continuing, you agree to Pinterest's Terms of Service; 
+        Opens a new tab and acknowledge you've read our Privacy Policy; 
+        Opens a new tab. Notice at collection; Opens a new tab.</p>
+    </div>
+  </div>
+<%include ./Partials/footer.ejs %>
